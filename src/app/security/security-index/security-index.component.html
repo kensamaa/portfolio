@@ -1,0 +1,20 @@
+<app-loading></app-loading>
+<div class="page-wraper">
+	<!-- header -->
+    <app-header1 [data]="profile"></app-header1>
+    <!-- header END -->
+	<div class="banner-section security-bnr">
+		<video autoplay loop id="video-background" muted plays-inline>
+			<source src="assets/media/video-2.mp4" type="video/mp4">
+		</video>
+		<div class="banner-inner bnr-left">
+			<h3 class="sub-title">I’ Am <span class="text-gradient">Thomas Grady</span></h3>
+			<h2 class="title">security officer</h2>
+			<a routerLink="/resume-{{member.profile}}" class="site-button outline button-md outline-half">Check My Cv</a>
+			<img src="assets/images/background/bg4.png" class="main-content" alt=""/>
+		</div>
+		<app-social-bar></app-social-bar>
+		<app-copywrite></app-copywrite>
+		<app-user-card [data]="member"></app-user-card>
+	</div>
+</div>

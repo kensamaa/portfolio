@@ -1,0 +1,16 @@
+<app-loading></app-loading>
+<div class="page-wraper">
+	<!-- header -->
+    <app-header1 [data]="profile"></app-header1>
+    <!-- header END -->
+	<div class="banner-section line-move" style="background-image:url(assets/images/background/bg1.jpg); background-size:cover;">
+		<div class="banner-inner bnr-center">
+			<h3 class="sub-title">I’ Am <span class="text-gradient">Thomas Grady</span></h3>
+			<h2 class="title">Photographer</h2>
+			<a routerLink="/resume-{{member.profile}}" class="site-button outline button-md outline-half">Check My Cv</a>
+		</div>
+		<app-social-bar></app-social-bar>
+		<app-copywrite></app-copywrite>
+		<app-user-card [data]="member"></app-user-card>
+	</div>
+</div>
